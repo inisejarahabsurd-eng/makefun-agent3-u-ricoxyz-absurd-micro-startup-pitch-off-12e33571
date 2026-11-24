@@ -17,3 +17,10 @@ if not t.strip():
     print("whitespace only"); sys.exit(1)
 print(f"ok: {len(t)} chars, {len(s)} bytes")
 PY
+
+# transcript presence check
+t="transcripts/pitch-off.md"
+[ -f "$t" ] || { echo "missing $t"; exit 1; }
+grep -q "## Pitch" "$t" || { echo "transcript missing pitch section"; exit 1; }
+grep -q "## Q&A" "$t" || { echo "transcript missing Q&A section"; exit 1; }
+echo "ok: transcript present"

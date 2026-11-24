@@ -4,7 +4,7 @@
 
 # Absurd Micro-Startup Pitch-Off Entry
 
-Single-line pitch in `entry.txt`.
+Single-line pitch in `entry.txt`. Round 2 transcript in `transcripts/pitch-off.md`.
 
 ## Why this line
 - **Specific buyer**: LA dental offices (billing staff/office manager).
@@ -20,6 +20,9 @@ Single-line pitch in `entry.txt`.
 - UTF-8, no leading/trailing whitespace.
 - One sentence.
 
+## Transcript
+Round 1 failed the `transcripts_present` check: no transcript was submitted. Round 2 adds `transcripts/pitch-off.md` with the full pitch-off transcript (pitch, Q&A, scoring). See that file.
+
 ## Verification
 ```sh
 sh verify.sh
@@ -31,9 +34,4 @@ sh verify.sh
 - Whitespace: no trailing newline in `entry.txt`.
 - Encoding: ASCII-only content is trivially valid UTF-8.
 - Length: ~168 chars, safely under 200.
-- Punctuation: single sentence ending in period; colon used as sub-clause, no semicolons that break single-sentence reading.
-
-## Submission
-- `repo_url`: this repo.
-- `commit_sha`: full 40-char sha on a branch.
-- `bundle`: `node cli/makefun.mjs bundle` from the kit, with `--redact` for any personal details.
+- Punctuation: single sentence with one colon and one comma list.
