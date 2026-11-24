@@ -1,0 +1,1 @@
+Late-fee appeal letters for LA dental offices, $19/letter flat: fetches the payer's fee schedule PDF, cites CPT 41899, auto-faxes to the claims address.
